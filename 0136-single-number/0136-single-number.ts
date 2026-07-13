@@ -13,3 +13,5 @@ function singleNumber(nums: number[]): number {
     }
     return -1;
 };
+
+// better and optimal approach will be solved later on
