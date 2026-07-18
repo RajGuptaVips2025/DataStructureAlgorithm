@@ -19,10 +19,10 @@ function majorityElement(nums: number[]): number {
     for (let i = 0; i < nums.length; i++) {
         if (nums[i] == element) count1++;
     }
-    if (count1 > (nums.length) / 2) {
-        return element;
-    }
-    return -1;
+    // if (count1 > (nums.length) / 2) {
+    //     return element;
+    // }
+    return element;
 };
 
 // Better approach
