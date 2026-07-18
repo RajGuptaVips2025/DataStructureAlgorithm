@@ -15,10 +15,10 @@ function majorityElement(nums: number[]): number {
         }
     }
 
-    let count1 = 0;
-    for (let i = 0; i < nums.length; i++) {
-        if (nums[i] == element) count1++;
-    }
+    // let count1 = 0;
+    // for (let i = 0; i < nums.length; i++) {
+    //     if (nums[i] == element) count1++;
+    // }
     // if (count1 > (nums.length) / 2) {
     //     return element;
     // }
