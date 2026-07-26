@@ -1,15 +1,16 @@
 /**
  Do not return anything, modify nums in-place instead.
  */
-function swap(arr: number[], index1: number, index2: number): void {
-    const temp = arr[index1];
-    arr[index1] = arr[index2];
-    arr[index2] = temp;
+
+function swap(arr: number[], i: number, j: number): void {
+    const temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
 }
 
 function moveZeroes(nums: number[]): void {
-    const n = nums.length;
-    let j = -1;
+    let j: number = -1;
+    let n: number = nums.length;
 
     for (let i = 0; i < n; i++) {
         if (nums[i] == 0) {
@@ -22,7 +23,7 @@ function moveZeroes(nums: number[]): void {
 
     for (let i = j + 1; i < n; i++) {
         if (nums[i] != 0) {
-            swap(nums, i, j);
+            swap(nums, i, j)
             j++;
         }
     }
