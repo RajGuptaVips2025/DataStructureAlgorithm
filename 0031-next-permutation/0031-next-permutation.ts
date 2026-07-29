@@ -24,11 +24,14 @@ function nextPermutation(nums: number[]): void {
         }
     }
 
-    let left = idx + 1;
-    let right = n - 1;
-    while (left < right) {
-        [nums[left], nums[right]] = [nums[right], nums[left]];
-        left++;
-        right--;
-    }
+    // let left = idx + 1;
+    // let right = n - 1;
+    // while (left < right) {
+    //     [nums[left], nums[right]] = [nums[right], nums[left]];
+    //     left++;
+    //     right--;
+    // }
+
+    // Reverses elements from index (idx + 1) to the end in-place
+    nums.splice(idx + 1, n - (idx + 1), ...nums.slice(idx + 1).reverse());
 };
