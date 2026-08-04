@@ -1,53 +1,22 @@
-// better-force approach
-
-function quickSort(arr: number[]): number[] {
-    if (arr.length <= 1) {
-        return arr;
-    }
-
-    // Pick the pivot (middle element)
-    const pivot = arr[Math.floor(arr.length / 2)];
-
-    const left: number[] = [];
-    const equal: number[] = [];
-    const right: number[] = [];
-
-    // Partition elements into three groups
-    for (const num of arr) {
-        if (num < pivot) {
-            left.push(num);
-        } else if (num === pivot) {
-            equal.push(num);
-        } else {
-            right.push(num);
-        }
-    }
-
-    // Recursively sort left and right partitions, then combine
-    return [...quickSort(left), ...equal, ...quickSort(right)];
-}
-
 function longestConsecutive(nums: number[]): number {
-    if (nums.length === 0) return 0;
-    const sortedNums = quickSort(nums);
-    let countCurrent = 0;
-    let lastSmaller = Number.MIN_SAFE_INTEGER;
+    let n = nums.length;
+    if (n === 0) return 0;
+    const st = new Set<number>(nums);
     let longest = 1;
-    let n = sortedNums.length;
 
-    for (let i = 0; i < n; i++) {
-        // 2. Iterate through sortedNums instead of nums
-        if (sortedNums[i] - 1 === lastSmaller) {
-            countCurrent = countCurrent + 1;
-            lastSmaller = sortedNums[i];
-        } else if (sortedNums[i] !== lastSmaller) {
-            countCurrent = 1;
-            lastSmaller = sortedNums[i];
+    for (const it of st) {
+        if (!st.has(it - 1)) {
+            let count = 1;
+            let x = it;
+
+            while (st.has(x + 1)) {
+                x = x + 1;
+                count = count + 1;
+            }
+            longest = Math.max(longest, count);
         }
-        longest = Math.max(longest, countCurrent);
     }
-
-    return longest
+    return longest;
 };
 
 
@@ -79,3 +48,54 @@ function longestConsecutive(nums: number[]): number {
 // }
 
 // return longest;
+
+
+// // better-force approach
+
+// function quickSort(arr: number[]): number[] {
+//     if (arr.length <= 1) {
+//         return arr;
+//     }
+
+//     // Pick the pivot (middle element)
+//     const pivot = arr[Math.floor(arr.length / 2)];
+
+//     const left: number[] = [];
+//     const equal: number[] = [];
+//     const right: number[] = [];
+
+//     // Partition elements into three groups
+//     for (const num of arr) {
+//         if (num < pivot) {
+//             left.push(num);
+//         } else if (num === pivot) {
+//             equal.push(num);
+//         } else {
+//             right.push(num);
+//         }
+//     }
+
+//     // Recursively sort left and right partitions, then combine
+//     return [...quickSort(left), ...equal, ...quickSort(right)];
+// }
+
+// if (nums.length === 0) return 0;
+// const sortedNums = quickSort(nums);
+// let countCurrent = 0;
+// let lastSmaller = Number.MIN_SAFE_INTEGER;
+// let longest = 1;
+// let n = sortedNums.length;
+
+// for (let i = 0; i < n; i++) {
+//     // 2. Iterate through sortedNums instead of nums
+//     if (sortedNums[i] - 1 === lastSmaller) {
+//         countCurrent = countCurrent + 1;
+//         lastSmaller = sortedNums[i];
+//     } else if (sortedNums[i] !== lastSmaller) {
+//         countCurrent = 1;
+//         lastSmaller = sortedNums[i];
+//     }
+//     longest = Math.max(longest, countCurrent);
+// }
+
+// return longest
