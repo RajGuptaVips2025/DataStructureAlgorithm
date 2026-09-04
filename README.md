@@ -41,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0001-two-sum) |
 | [0128-longest-consecutive-sequence](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0128-longest-consecutive-sequence) |
 | [0169-majority-element](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0169-majority-element) |
+| [1832-check-if-the-sentence-is-pangram](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/1832-check-if-the-sentence-is-pangram) |
 ## Sorting
 |  |
 | ------- |
@@ -68,4 +69,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0128-longest-consecutive-sequence) |
+## String
+|  |
+| ------- |
+| [1832-check-if-the-sentence-is-pangram](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/1832-check-if-the-sentence-is-pangram) |
 <!---LeetCode Topics End-->
