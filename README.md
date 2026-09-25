@@ -73,4 +73,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1832-check-if-the-sentence-is-pangram](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/1832-check-if-the-sentence-is-pangram) |
+## Boyer–Moore Majority Vote Algorithm
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
