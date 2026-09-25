@@ -1,54 +1,30 @@
 function majorityElement(nums: number[]): number {
-    // optimal approach
-    let count = 0;
-    let element
+    const mpp = new Map<number, number>();
+    let n = nums.length;
 
-    for (let i = 0; i < nums.length; i++) {
-        if (count == 0) {
-            count = 1;
-            element = nums[i];
-        }
-        else if (nums[i] == element) {
-            count++;
-        } else {
-            count--;
+    for (let i = 0; i < n; i++) {
+        mpp.set(nums[i], (mpp.get(nums[i]) || 0) + 1);
+    }
+
+    for (const [key, value] of mpp) {
+        if (value > Math.floor(nums.length)/2) {
+            return key;
         }
     }
 
-    let count1 = 0;
-    for (let i = 0; i < nums.length; i++) {
-        if (nums[i] == element) count1++;
-    }
-    if (count1 > (nums.length) / 2) {
-        return element;
-    }
     return -1;
 };
 
-// Better approach
-// const mpp = new Map<number, number>();
-
-// for (let i = 0; i < nums.length; i++) {
-//     mpp.set(nums[i], (mpp.get(nums[i]) || 0) + 1);
-// }
-
-// for(const [key, value] of mpp){
-//     if(value > Math.floor(nums.length/2)){
-//         return key;
-//     }
-// }
-
-// return -1;
-
 
 // brute force approach
-// for (let i = 0; i < nums.length; i++) {
+// let n = nums.length;
+
+// for (let i = 0; i < n; i++) {
 //     let count = 0;
-//     for (let j = 0; j < nums.length; j++) {
-//         if (nums[j] == nums[i]) {
+//     for (let j = 0; j < n; j++) {
+//         if(nums[j] === nums[i]){
 //             count++;
 //         }
 //     }
-//     if(count > nums.length/2) return nums[i];
+//     if(count>n/2) return nums[i];
 // }
-// return -1;
