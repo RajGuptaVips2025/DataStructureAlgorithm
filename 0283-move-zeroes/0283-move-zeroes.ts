@@ -3,14 +3,14 @@
  */
 
 function swap(arr: number[], i: number, j: number): void {
-    const temp = arr[i];
+    let temp = arr[i];
     arr[i] = arr[j];
     arr[j] = temp;
 }
 
 function moveZeroes(nums: number[]): void {
-    let j: number = -1;
-    let n: number = nums.length;
+    let n = nums.length;
+    let j = -1;
 
     for (let i = 0; i < n; i++) {
         if (nums[i] == 0) {
@@ -21,10 +21,13 @@ function moveZeroes(nums: number[]): void {
 
     if (j === -1) return;
 
+    // Find non-zero elements and swap them with zero
+    // I have done nums[j] !== 0 previously which is wrong because we have to find the non zero element here.
     for (let i = j + 1; i < n; i++) {
-        if (nums[i] != 0) {
-            swap(nums, i, j)
-            j++;
+        if (nums[i] !== 0) {
+            swap(nums, i, j);
+            j++
         }
     }
+
 };
