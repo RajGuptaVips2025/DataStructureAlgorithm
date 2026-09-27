@@ -2,23 +2,19 @@
  Do not return anything, modify nums in-place instead.
  */
 function rotate(nums: number[], k: number): void {
-    k = k % (nums.length);
-    let temp: number[] = []
-    let n = nums.length;
+    const n = nums.length;
+    k = k % n;
+    let temp: number[] = [];
 
-    // storing the array in nums
-     for (let i = n - k; i < n; i++){
-        temp[i - (n - k)] = nums[i]
+    for (let i = (n - k); i < n; i++) {
+        temp[i - (n - k)] = nums[i];
     }
 
-    // shifting the array nums
-    for (let i = ((nums.length) - k - 1); i >= 0; i--) {
-        nums[i + k] = nums[i];
+    for (let i = (n - k) - 1; i >= 0; i--) {
+        nums[i+k] = nums[i];
     }
 
-    // rotating the aaray
-    for (let i = 0; i < k; i++) {
+    for(let i=0; i<temp.length; i++){
         nums[i] = temp[i];
     }
-
 };
