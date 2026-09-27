@@ -1,11 +1,12 @@
 function removeDuplicates(nums: number[]): number {
-    let i: number = 0;
+    const set = new Set(nums); // to find the total unique values.
 
-    for (let j = 1; j < nums.length; j++) {
-        if (nums[j] != nums[i]) {
-            nums[i + 1] = nums[j];
-            i++;
-        }
+    let i = 0; // for having the counter of total unique values.
+
+    for(let num of set){
+        nums[i] = num;
+        i++;
     }
-    return i + 1; // returning i+1 because i initially started from zero;
+
+    return set.size;
 };
