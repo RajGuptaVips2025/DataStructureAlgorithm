@@ -1,7 +1,7 @@
 function increasingTriplet(nums: number[]): boolean {
     const n = nums.length;
-    let num1 = Number.MAX_VALUE;
-    let num2 = Number.MAX_VALUE;
+    let num1 = Infinity;
+    let num2 = Infinity;
 
     for (let i = 0; i < n; i++) {
         let num3 = nums[i];
