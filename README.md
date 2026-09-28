@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0189-rotate-array](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0189-rotate-array) |
 | [0238-product-of-array-except-self](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0238-product-of-array-except-self) |
 | [0283-move-zeroes](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0283-move-zeroes) |
+| [0334-increasing-triplet-subsequence](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0334-increasing-triplet-subsequence) |
 | [0485-max-consecutive-ones](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0485-max-consecutive-ones) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/2149-rearrange-array-elements-by-sign) |
@@ -84,4 +85,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0238-product-of-array-except-self) |
+## Greedy
+|  |
+| ------- |
+| [0334-increasing-triplet-subsequence](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0334-increasing-triplet-subsequence) |
+## Longest Increasing Subsequence
+|  |
+| ------- |
+| [0334-increasing-triplet-subsequence](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0334-increasing-triplet-subsequence) |
 <!---LeetCode Topics End-->
