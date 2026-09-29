@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0026-remove-duplicates-from-sorted-array](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0031-next-permutation](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0031-next-permutation) |
 | [0075-sort-colors](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0075-sort-colors) |
+| [0125-valid-palindrome](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0125-valid-palindrome) |
 | [0189-rotate-array](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0189-rotate-array) |
 | [0283-move-zeroes](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0283-move-zeroes) |
 | [0392-is-subsequence](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0392-is-subsequence) |
@@ -78,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0125-valid-palindrome](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0125-valid-palindrome) |
 | [0392-is-subsequence](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/0392-is-subsequence) |
 | [1832-check-if-the-sentence-is-pangram](https://github.com/RajGuptaVips2025/DataStructureAlgorithm/tree/master/1832-check-if-the-sentence-is-pangram) |
 ## Boyer–Moore Majority Vote Algorithm
